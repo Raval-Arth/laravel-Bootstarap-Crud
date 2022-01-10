@@ -10,7 +10,7 @@
 
             <div class="py-5 text-center">
                 <img class="d-block mx-auto mb4" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-                <h2>Checkout form</h2>
+                <h2>login</h2>
             </div>
 
             <div class="row g-5">
