@@ -6,5 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/login', 'login')->name('login');
+Route::get('/login', function () {
+    return view('login', ['name' => 'James']);
+})->name('login');
+
 Route::view('/register', 'register')->name('register');
