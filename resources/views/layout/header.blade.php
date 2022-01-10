@@ -2,8 +2,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Day_2_Laravel_Crud</title>
+    <title>Laravel Crud</title>
 
+    <link rel="icon" href={{ asset('Images/Icon.jpg') }} type="image/x-icon">
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

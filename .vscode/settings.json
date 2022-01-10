@@ -1,12 +1,16 @@
 {
-    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "[php]": {
-        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    // "[Blade]": {
+    //     "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    // },
+    "[blade]": {
+        "editor.defaultFormatter": "amirmarmul.laravel-blade-vscode",
+        "editor.autoClosingBrackets": "always"
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
