@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -23,5 +24,19 @@ class UserController extends Controller
 
         // redirect user to login page
         return redirect()->route('login');
+    }
+
+    public function auth(Request $request)
+    {
+        $login_result = Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')]);
+
+        if ($login_result) {
+            return redirect('/');
+        } else {
+            // session message
+            $request->session()->flash('error_message', 'Invalid credentials');
+
+            return redirect('login');
+        }
     }
 }

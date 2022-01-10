@@ -7,6 +7,12 @@
       <div class="card">
         <div class="card-body">
 
+          @if (Session::has('error_message'))
+          <div class="alert alert-danger" role="alert">
+            {{ Session::get('error_message') }}
+          </div>
+          @endif
+
           @if (Session::has('message'))
           <div class="alert alert-success" role="alert">
             {{ Session::get('message') }}
@@ -16,7 +22,8 @@
           <h2>Login</h2>
         </div>
       </div>
-      <x-form />
+
+      <x-login-form />
     </div>
   </div>
 </main>

@@ -11,4 +11,6 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::post('/do_register','UserController@register_user');
+Route::post('/do_login','UserController@auth');
+
 Route::view('/register', 'register')->name('register');
